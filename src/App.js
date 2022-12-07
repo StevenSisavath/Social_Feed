@@ -5,9 +5,20 @@ import Post from './Components/Post/Post';
 import PostList from './Components/PostList/PostList';
 
 function App() {
+
+  const [posts, setPosts] = useState([{name:'as'}])
+
+  function addNewPost(entry){
+    let tempPosts = [...posts, entry];
+    setPosts(tempPosts);
+  }
+
   return (
     <div >
-      <h1>hello</h1>
+      <NavBar/>
+      <CreatePostForm addNewPostProperty={addNewPost}/>
+      
+      <PostList parentPosts={posts}/>
     </div>
   );
 }

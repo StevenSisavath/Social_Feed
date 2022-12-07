@@ -1,6 +1,13 @@
+
+
 const Post = (props) => {
-    return ( 
-        <h1></h1>
+    return (
+        <div>
+            <div>Name{props.posts.name}</div>
+            <div>Text{props.posts.text}</div>
+            <button>Like{props.posts.like}</button>
+            <button>Dislike{props.posts.dislike}</button>
+        </div>
      );
 }
  

@@ -1,6 +1,10 @@
 const NavBar = (props) => {
     return ( 
-        <h1></h1>
+        <nav>
+            <ul>
+                <li>SocialFeed</li>
+            </ul>
+        </nav>
      );
 }
  

@@ -1,6 +1,14 @@
+import Post from "../Post/Post";
+
 const PostList = (props) => {
     return ( 
-        <h1></h1>
+        <div>
+            {props.parentPosts.map((post) => {
+                return (
+                    <Post posts = {post}/>
+                );
+            })}
+        </div>
      );
 }
  
